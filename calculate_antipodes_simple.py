@@ -72,9 +72,6 @@ def find_closest_ideology(target_coords, ideologies, exclude_name=None):
     return closest, min_distance
 
 def calculate_antipodes(ideologies):
-    """Calculate antipodes by reflecting through origin."""
-    print("Calculating antipodes by reflecting through origin (0, 0, 0)\n")
-    
     antipodes = {}
     
     for ideology in ideologies:
@@ -85,46 +82,19 @@ def calculate_antipodes(ideologies):
         closest, distance = find_closest_ideology(antipodal_point, ideologies, ideology["name"])
         
         antipodes[ideology["name"]] = closest["name"]
-        
-        print(f"{ideology['name']:40} at ({ideology['coords']['x']:5.1f}, {ideology['coords']['y']:5.1f}, {ideology['coords']['z']:5.1f})")
-        print(f"  → Reflected point: ({antipodal_point['x']:5.1f}, {antipodal_point['y']:5.1f}, {antipodal_point['z']:5.1f})")
-        print(f"  → Closest ideology: {closest['name']:40} (distance: {distance:.3f})")
-        print()
     
     return antipodes
 
 def generate_javascript_object(antipodes):
     """Generate JavaScript object format for the antipodes."""
-    lines = ["        const antipodes = {"]
+    lines = ["const antipodes = {"]
     for ideology, antipode in antipodes.items():
-        lines.append(f'            "{ideology}": "{antipode}",')
+        lines.append(f'  "{ideology}": "{antipode}",')
     # Remove trailing comma from last line
     lines[-1] = lines[-1].rstrip(',')
-    lines.append("        };")
+    lines.append("};")
     return "\n".join(lines)
 
 if __name__ == "__main__":
-    print("="*100)
-    print("CALCULATING ANTIPODES VIA REFLECTION THROUGH ORIGIN")
-    print("="*100 + "\n")
-    
     antipodes = calculate_antipodes(ideologies)
-    
-    print("\n" + "="*100)
-    print("JAVASCRIPT OUTPUT")
-    print("="*100 + "\n")
-    
     print(generate_javascript_object(antipodes))
-    
-    print("\n" + "="*100)
-    print("VERIFICATION: Checking for reciprocal relationships")
-    print("="*100 + "\n")
-    
-    reciprocal_count = 0
-    for ideology, antipode in antipodes.items():
-        if antipodes.get(antipode) == ideology:
-            reciprocal_count += 1
-            print(f"✓ {ideology} ⟷ {antipode}")
-    
-    print(f"\nTotal reciprocal pairs: {reciprocal_count // 2}")
-    print(f"Total ideologies: {len(ideologies)}")
