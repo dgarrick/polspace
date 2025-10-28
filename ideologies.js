@@ -99,7 +99,7 @@ const ideologies = [
     },
     {
         name: "Neoliberalism",
-        coords: { x: 0.3, y: 0.5, z: 0.5 }, // Keeping current
+        coords: { x: -0.3, y: 0.5, z: 0.5 },
         description: "Free market capitalism, global trade, deregulation, and privatization as engines of growth and efficiency. Favors market solutions and technocratic governance over democratic deliberation. Representative figures: Margaret Thatcher, Ronald Reagan, Larry Summers, The Economist.",
         shortLabel: "Neoliberalism"
     },
@@ -122,14 +122,14 @@ const ideologies = [
         shortLabel: "Solarpunk"
     },
     {
-        name: "Green Capitalism",
-        coords: { x: 0.2, y: 0.3, z: 0.2 }, // Slightly centralized, moderately accelerationist (green tech optimism), slightly individualist
-        description: "Market-based environmental solutions through carbon pricing, green technology, and sustainable business innovation. Believes capitalism can be reformed to address climate change through proper incentives. Representative figures: Paul Hawken, Amory Lovins, Ray Anderson, John Elkington.",
-        shortLabel: "Green\nCapitalism"
+        name: "Ordoliberalism",
+        coords: { x: 0.2, y: 0.3, z: 0.2 },
+        description: "Ordoliberalism is a German school of economic thought that emphasizes the necessity for government to create and maintain a fair and competitive market order by establishing strong legal foundations and clear rules for economic actors. Representative figures: Walter Eucken, Franz Bohm, Willhelm Ropke.",
+        shortLabel: "Ordoliberalism"
     },
     {
         name: "Georgism",
-        coords: { x: -0.2, y: 0.3, z: 0.0 }, // Keeping current
+        coords: { x: -0.2, y: 0.1, z: 0.0 },
         description: "Economic philosophy centered on land value taxation and common ownership of natural resources. Argues that land and natural resources belong to all while labor and capital belong to individuals, funding public goods through single land tax. Representative figures: Henry George, Lars Doucet, Scott Sumner, Progress and Poverty movement.",
         shortLabel: "Georgism"
     },
@@ -165,7 +165,7 @@ const ideologies = [
     },
     {
         name: "Monarchism",
-        coords: { x: 0.6, y: 0.0, z: 0.4 }, // Centralized authority, neutral on acceleration, individualist hierarchy
+        coords: { x: 0.9, y: 0.0, z: 0.4 }, // Centralized authority, neutral on acceleration, individualist hierarchy
         description: "Hereditary sovereignty and aristocratic hierarchy as natural order of society. Emphasizes tradition, duty, and organic social structure over democratic equality. Maintains class distinctions and property rights under royal authority. Representative figures: Edmund Burke (early), Thomas Carlyle, monarchist movements, constitutional monarchies.",
         shortLabel: "Monarchism"
     },
@@ -176,9 +176,9 @@ const ideologies = [
         shortLabel: "Neoreaction"
     },
     {
-        name: "Theocracy",
-        coords: { x: 0.7, y: -0.3, z: 0.3 }, // Centralized religious authority, decelerationist, hierarchical individualism
-        description: "Religious law and clerical authority as basis of political order. Divine mandate supersedes democratic will. Maintains traditional moral order and hierarchical structure through religious institutions. Skeptical of secular modernization. Representative figures: Vatican (historical), Iranian Revolution, Taliban, Christian Reconstructionism.",
-        shortLabel: "Theocracy"
-    },
+        name: "Progressive Conservatism",
+        coords: { x: 0.2, y: -0.1, z: 0.4},
+        description: "Progressive conservatism is a hybrid political ideology that seeks to combine conservative values—such as tradition, stability, and personal responsibility—with progressive policies that address social and economic challenges through reform and government intervention where needed. Representative figures: Theodore Roosevelt, Benjamin Disraeli.",
+        shortLabel: "ProgCon"
+    }
 ];
