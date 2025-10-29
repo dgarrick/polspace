@@ -38,6 +38,7 @@ ideologies = [
     {"name": "Monarchism", "coords": {"x": 0.9, "y": 0.0, "z": 0.4}},
     {"name": "Neoreaction", "coords": {"x": 0.9, "y": 0.9, "z": 0.5}},
     {"name": "Progressive Conservatism", "coords": {"x": 0.2, "y": -0.1, "z": 0.4}},
+    {"name": "Social Liberalism", "coords": {"x": 0.4, "y": 0.2, "z": 0.4}}
 ]
 
 def reflect_through_origin(coords):

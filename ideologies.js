@@ -123,7 +123,7 @@ const ideologies = [
     },
     {
         name: "Ordoliberalism",
-        coords: { x: 0.2, y: 0.3, z: 0.2 },
+        coords: { x: 0.6, y: 0.2, z: 0.2 },
         description: "Ordoliberalism is a German school of economic thought that emphasizes the necessity for government to create and maintain a fair and competitive market order by establishing strong legal foundations and clear rules for economic actors. Representative figures: Walter Eucken, Franz Bohm, Willhelm Ropke.",
         shortLabel: "Ordoliberalism"
     },
@@ -180,5 +180,11 @@ const ideologies = [
         coords: { x: 0.2, y: -0.1, z: 0.4},
         description: "Progressive conservatism is a hybrid political ideology that seeks to combine conservative values—such as tradition, stability, and personal responsibility—with progressive policies that address social and economic challenges through reform and government intervention where needed. Representative figures: Theodore Roosevelt, Benjamin Disraeli.",
         shortLabel: "ProgCon"
+    },
+    {
+        name: "Social Liberalism",
+        coords: { x: 0.4, y: 0.2, z: 0.4},
+        description: "Social liberalism is a political philosophy that supports individual freedoms and civil rights while advocating for government intervention to promote social justice, economic equality, and public welfare. It blends liberal principles with a belief that government should actively address issues like poverty, healthcare, and education through social programs and regulations, creating a mixed economy that balances individual liberty with the common good. Representative Figures: John Rawls, Amartya Sen.",
+        shortLabel: "Social Liberalism"
     }
 ];
